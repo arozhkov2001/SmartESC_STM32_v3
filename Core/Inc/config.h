@@ -31,8 +31,8 @@
 #define CAL_I 38		// ADC counts * CAL_I = current in mA
 
 // gains for PI controls
-#define P_FACTOR_I_Q 100
-#define I_FACTOR_I_Q 2
+#define P_FACTOR_I_Q 50
+#define I_FACTOR_I_Q 1
 #define P_FACTOR_I_D 100
 #define I_FACTOR_I_D 10
 
@@ -43,8 +43,8 @@
 #define BRAKEMAX 190
 
 // parameters for speed calculation
-#define WHEEL_CIRCUMFERENCE 550 //690 for original M365 motor
-#define GEAR_RATIO 11 //15 for original M365 motor
+#define WHEEL_CIRCUMFERENCE 690 //690 for original M365 motor
+#define GEAR_RATIO 15 //15 for original M365 motor
 
 // speed limits for invividual modes in kph
 #define SPEEDLIMIT_ECO 6
@@ -52,9 +52,9 @@
 #define SPEEDLIMIT_SPORT 50
 
 // motor current limits for invividual modes in mA
-#define PH_CURRENT_MAX_ECO 5000
-#define PH_CURRENT_MAX_NORMAL 9000
-#define PH_CURRENT_MAX_SPORT 14000
+#define PH_CURRENT_MAX_ECO 14000
+#define PH_CURRENT_MAX_NORMAL 20000
+#define PH_CURRENT_MAX_SPORT 28000
 
 // motor current limit for regen in mA
 #define REGEN_CURRENT 20000
@@ -63,20 +63,20 @@
 #define FW_CURRENT_MAX 18000 //max id
 
 // maximum battery currents in mA
-#define BATTERYCURRENT_MAX 8000
+#define BATTERYCURRENT_MAX 20000
 #define REGEN_CURRENT_MAX 10000
 
 // battery voltage limits in mV
-#define BATTERYVOLTAGE_MIN 33000
+#define BATTERYVOLTAGE_MIN 29000
 #define BATTERYVOLTAGE_MAX 42000
 
 
 // motor spinning direction
-#define REVERSE 1 //1 for original M365 motor
+#define REVERSE -1 //1 for original M365 motor
 
 // settings for speed PLL (angle estimation)
 #define SPEED_PLL 1 //1 for using PLL, 0 for angle extrapolation
-#define P_FACTOR_PLL 10 //7 for original M365 motor
-#define I_FACTOR_PLL 10 //7 for original M365 motor
+#define P_FACTOR_PLL 7 //7 for original M365 motor
+#define I_FACTOR_PLL 7 //7 for original M365 motor
 
 #endif /* CONFIG_H_ */

@@ -31,7 +31,7 @@
 #define CAL_I 38		// ADC counts * CAL_I = current in mA
 
 // gains for PI controls
-#define P_FACTOR_I_Q 50
+#define P_FACTOR_I_Q 80
 #define I_FACTOR_I_Q 1
 #define P_FACTOR_I_D 100
 #define I_FACTOR_I_D 10

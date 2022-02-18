@@ -427,7 +427,7 @@ int main(void) {
 	  PI_iq.setpoint = 0;
 	  PI_iq.limit_output = _U_MAX;
 	  PI_iq.max_step=5000;
-	  PI_iq.shift=10;
+	  PI_iq.shift=15;
 	  PI_iq.limit_i=_U_MAX;
 
 	calculate_tic_limits();

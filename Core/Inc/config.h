@@ -31,13 +31,13 @@
 #define CAL_I 38		// ADC counts * CAL_I = current in mA
 
 // gains for PI controls
-#define P_FACTOR_I_Q 80
+#define P_FACTOR_I_Q 90
 #define I_FACTOR_I_Q 1
 #define P_FACTOR_I_D 100
 #define I_FACTOR_I_D 10
 
 // min and max values of throttle and brake signals in ADC counts
-#define THROTTLEOFFSET 45
+#define THROTTLEOFFSET 50
 #define THROTTLEMAX 175
 #define BRAKEOFFSET 50
 #define BRAKEMAX 190
@@ -60,7 +60,7 @@
 #define REGEN_CURRENT 20000
 
 // maximum current for flux weakening in mA
-#define FW_CURRENT_MAX 18000 //max id
+#define FW_CURRENT_MAX 0 //max id
 
 // maximum battery currents in mA
 #define BATTERYCURRENT_MAX 20000
@@ -72,7 +72,7 @@
 
 
 // motor spinning direction
-#define REVERSE -1 //1 for original M365 motor
+#define REVERSE 1 //1 for original M365 motor
 
 // settings for speed PLL (angle estimation)
 #define SPEED_PLL 1 //1 for using PLL, 0 for angle extrapolation
